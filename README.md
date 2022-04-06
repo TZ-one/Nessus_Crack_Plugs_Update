@@ -13,7 +13,7 @@
 
 # 工具的使用
 
-破解插件包你可以在这个链接下载：https://www.ddosi.org/?s=Nessus
+破解插件包你可以在这个链接找最新破解插件包下载：https://www.ddosi.org/?s=Nessus
 
 Nessus安装参考这里：https://www.ddosi.org/nessus/
 

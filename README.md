@@ -10,7 +10,7 @@ __非默认安装位置，需要配置update_config配置文件里的路径！__
 
 Nessus安装参考这里：https://www.ddosi.org/nessus/
 
-工具的使用就是修改update_config的路径，然后运行_Nessus破解插件更新.bat_程序。
+工具的使用就是修改update_config的路径，然后运行"Nessus破解插件更新.bat"程序。
 
 然后按照提示输入破解插件包路径，插件包是.tar.gz的文件。
 

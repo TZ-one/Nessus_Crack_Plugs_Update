@@ -1,0 +1,9 @@
+[path]
+
+# nessuscli_path为nessuscli的目录
+# data_path为Nessus的插件存放目录(plugins目录的上级目录)。
+# 路径中带有空格也不需要加双引号，直接复制路径粘贴就好。
+# 修改地址的时候等号两边不要有空格。
+
+nessuscli_path=C:\Program Files\Tenable\Nessus
+data_path=C:\ProgramData\Tenable\Nessus\nessus

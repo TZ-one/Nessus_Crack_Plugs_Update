@@ -6,7 +6,7 @@ __非默认安装位置，需要配置update_config配置文件里的路径！__
 
 # 工具的使用
 
-破解插件包你可以在这个链接下载：https://www.ddosi.org/nessus-plugin-pro-3/
+破解插件包你可以在这个链接下载：https://www.ddosi.org/nessus-plugin-4/
 
 Nessus安装参考这里：https://www.ddosi.org/nessus/
 

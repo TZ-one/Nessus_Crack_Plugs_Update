@@ -3,7 +3,7 @@
 cd /d "%~dp0"
 
 mode con cols=120 lines=40
-title Nessus插件更新v0.6 by:清晨
+title Nessus插件更新v0.7 by:清晨
 color 0a
 
 echo.
@@ -20,7 +20,7 @@ set "config=update_config"
 set "nessuscli_path=C:\Program Files\Tenable\Nessus"
 set "data_path=C:\ProgramData\Tenable\Nessus\nessus"
 
-if exist "update_config" (
+if exist "%config%" (
 	echo.
 	echo [*] 存在update_config文件，程序将使用update_config文件中配置的路径。
 	for /f "usebackq tokens=1* delims==" %%a in ("%config%") do (
@@ -63,20 +63,27 @@ goto inputPluginPath
 :start
 echo.
 echo [*] 停止Nessus服务。
+net stop "Tenable Nessus" >nul 2>&1
+sc query "Tenable Nessus" 2>nul|find /i "STOPPED" >nul 2>&1 &&(
+	echo [+] Nessus服务停止成功。
+)||(
+	echo [-] Nessus服务停止失败！程序将终止运行！
+	echo 请按任意键退出。
+	pause >nul
+	exit
+)
 echo.
-net stop "Tenable Nessus"
 echo [*] 去掉之前安装的插件只读、隐藏和系统属性权限，请稍等。。。
 echo.
 attrib -s -r -h "%data_path%\plugins\*.*"
 echo [*] 去掉plugin_feed_info.inc权限
 echo.
-attrib -s -r -h "%data_path%\plugin_feed_info.inc"
+attrib -s -r -h "%data_path%\plugin_feed_info.inc" >nul 2>&1
 if exist "%data_path%\templates\settings.json" (
 	echo [*] 去掉templates目录的json文件的权限
 	echo.
-	attrib -s -r -h "%data_path%\templates\*.json"
-	attrib -s -r -h "%data_path%\templates\tmp\*.json"
-	echo.
+	attrib -s -r -h "%data_path%\templates\*.json" >nul 2>&1
+	attrib -s -r -h "%data_path%\templates\tmp\*.json" >nul 2>&1
 )
 echo [*] 安装/更新Nessus插件，请稍等。。。
 echo.

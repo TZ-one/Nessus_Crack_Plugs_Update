@@ -20,7 +20,7 @@ Nessus安装参考这里：https://www.ddosi.org/nessus/
 
 ![image-20220510095010073](images/image-20220510095010073.png)
 
-然后浏览器访问https://127.0.0.1:8834/ 或者 https://localhost:8834/登录Nessus，查看插件的版本是不是更新的版本，使用数量是不是无限制。
+然后浏览器访问https://127.0.0.1:8834/ 或者 https://localhost:8834/ 登录Nessus，查看插件的版本是不是更新的版本，使用数量是不是无限制。
 
 ![1667444300183](images/1667444300183.png)
 

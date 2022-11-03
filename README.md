@@ -6,7 +6,7 @@ __非默认安装位置，需要配置update_config配置文件里的路径！__
 
 # 工具的使用
 
-破解插件包你可以在这个链接下载：https://www.ddosi.org/nessus-plugin-6/
+破解插件包你可以在这个链接下载：https://www.iculture.cc/software/pig=25546
 
 Nessus安装参考这里：https://www.ddosi.org/nessus/
 
@@ -19,3 +19,15 @@ Nessus安装参考这里：https://www.ddosi.org/nessus/
 再按照提示，把更新后的版本号复制粘贴输入上去回车。然后静静的等着就好了。
 
 ![image-20220510095010073](images/image-20220510095010073.png)
+
+然后浏览器访问https://127.0.0.1:8834/ 或者 https://localhost:8834/登录Nessus，查看插件的版本是不是更新的版本，使用数量是不是无限制。
+
+![1667444300183](images/1667444300183.png)
+
+这里插一嘴。这个版本貌似和templates目录下的json文件有关系，和plugin_feed_info.inc文件好像没多大关系。
+
+![1667444406314](images/1667444406314.png)
+
+再新建任务看看插件是否真的在，在就说明更新成功了。
+
+![1667444348160](images/1667444348160.png)

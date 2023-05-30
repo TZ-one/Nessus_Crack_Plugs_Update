@@ -12,9 +12,7 @@ __非默认安装位置，需要配置update_config配置文件里的路径！__
 
 其实基本都是下一步，只要注意两点，1是Choose how you want to deploy Nessus. Select a product to get started.这里选则最后一个Managed Scanner。2是，Managed by那里选Tenable.sc，就好了（这里没有截图，懒）。
 
-破解插件包你可以在这个链接下载：（Nessus20230530插件）https://pan.quark.cn/s/2a4bd1d452c7 ，解压密码：mht（来至棉花糖网络安全圈公众号）
-
-上面那个公众号有很多的破解工具会发，需要的可以关注一下，还有一个网站 https://www.iculture.cc/ 也有破解工具，不过呢最近没有更新Nessus的破解插件了，这里也推荐一下，可以收藏一下。
+插件可以官网下载试用7天的插件包。
 
 工具的使用就是修改update_config的路径，然后运行"Nessus破解插件更新.bat"程序。
 

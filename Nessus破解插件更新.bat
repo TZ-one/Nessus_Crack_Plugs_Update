@@ -93,10 +93,10 @@ set /p ver=请输入上面插件更新后显示的插件版本(千万不要乱输或输错)：
 echo.
 echo [*] 修改plugin_feed_info.inc文件
 echo PLUGIN_SET = "%ver%"; >%data_path%\plugins\plugin_feed_info.inc
-echo PLUGIN_FEED = "ProfessionalFeed (Direct)"; >>%data_path%\plugins\plugin_feed_info.inc
+echo PLUGIN_FEED = "HomeFeed (Non-commercial use only)"; >>%data_path%\plugins\plugin_feed_info.inc
 echo PLUGIN_FEED_TRANSPORT = "Tenable Network Security Lightning"; >>%data_path%\plugins\plugin_feed_info.inc
 echo PLUGIN_SET = "%ver%"; >%data_path%\plugin_feed_info.inc
-echo PLUGIN_FEED = "ProfessionalFeed (Direct)"; >>%data_path%\plugin_feed_info.inc
+echo PLUGIN_FEED = "HomeFeed (Non-commercial use only)"; >>%data_path%\plugin_feed_info.inc
 echo PLUGIN_FEED_TRANSPORT = "Tenable Network Security Lightning"; >>%data_path%\plugin_feed_info.inc
 echo.
 echo [*] 增加插件只读、隐藏和系统属性权限，请稍等。。。
